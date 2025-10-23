@@ -1,10 +1,10 @@
-    # Deployment
+# Deployment
 
     - Signup on AWS 
     - Launch instance
     - chmod 400 <secret>.pem
-    - ssh -i "devTinder-secret.pem" ubuntu@<Public IP Address>.ap-south-1.compute.amazonaws.com
-    - Install Correct Node version
+    - ssh -i "devTinder-secret.pem" ubuntu@ec2-<your ip address>.ap-south-1.compute.amazonaws.com
+    - Install Node version 16.17.0
     - Git clone
     - Frontend    
         - npm install  -> dependencies install
@@ -26,4 +26,3 @@
         - config nginx - /etc/nginx/sites-available/default
         - restart nginx - sudo systemctl restart nginx
         - Modify the BASEURL in frontend project to "/api"
-
